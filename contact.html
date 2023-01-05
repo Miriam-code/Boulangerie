@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+   <nav>
+     <img src="photo/logo.PNG" alt="logo">
+        <div class="onglets">
+            <a href="site.html">Accueil</a>
+            <a href="boulangerie.html">Boulangerie</a>
+            <a href="Patisserie.html">Patisserie</a>
+            <a href="viennoiserie.html">Viennoiserie</a>
+      <a href="contact.html">Contact</a>
+
+        </div>
+    </nav>
+<div class="contactez-nous">
+  <h1>Contactez-nous</h1>
+  <p>Un problème, une question, envie de nous envoyer un message d’amour ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
+  <form action="/page-traitement-donnees" method="post">
+    <div>
+      <label for="nom">Votre nom</label>
+      <input type="text" id="nom" name="nom" placeholder="Miriam" required>
+    </div>
+    <div>
+      <label for="email">Votre e-mail</label>
+      <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
+    </div>
+    <div>
+      <label for="sujet">Quel est le sujet de votre message ?</label>
+      <select name="sujet" id="sujet" required>
+          <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+          <option value="probleme-compte">Passer commande</option>
+          <option value="question-produit">Question à propos d’un produit</option>
+          <option value="suivi-commande">Suivi de ma commande</option>
+          <option value="autre">Autre...</option>
+       </select>
+    </div>
+    <div>
+      <label for="message">Votre message</label>
+      <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
+    </div>
+    <div>
+      <button type="submit" class="envoyer">Envoyer</button>
+    </div>
+  </form>
+</div>
+<footer>
+
+  <h1>Nos services</h1>
+         
+     <div class="services">
+         
+         <div class="service">
+             <h3>Livraison gratuite</h3>
+             <p>La Boulangerie  livre les patisseries et viennoiseries destinés à vos
+                  proches accompagnés des messages les plus attentionnés partout en France en 24h.
+                  <br>
+                 La Boulangerie compose et livre dans toute la France en quelques heures. À Paris ou dans toutes les villes de France, il suffit de passer commande avant 17h pour une livraison le lendemain matin!
+             </p> 
+         </div>
+
+         <div class="service">
+             <h3>Paiement en ligne</h3>
+             <p>Paiement par carte bancaire et par Paypal.
+                 <br>
+                 - Vous pouvez utiliser votre Carte Bleue, Visa, ou Mastercard en toute sécurité, le paiement est sécurisé grâce au système de protection et de cryptage SSL fourni par la banque Société Générale.<br>
+                 - Vous pouvez aussi utiliser le service Paypal qui est 100 % sécurisé.
+             </p>
+         </div>
+
+         <div class="service">
+             <h3>Nous Contacter</h3>
+             <a href="contact.html" title="contacter">Voici le formulaire de contact!</a>
+         </div>
+     </div> 
+     <div id="contact">
+         <img src="photo/logo.PNG" alt="logo" id="logo"/><br>
+        <div class="reseaux"><a href="site.html">Accueil</a>
+         <a href="boulangerie.html">Boulangerie</a>
+         <a href="Patisserie.html">Patisserie</a>
+         <a href="viennoiserie.html">Viennoiserie</a>
+         <div>
+          <a href="https://www.facebook.com/Assofac/"><img src="photo/fb.png"style="text-align: center;"></a>
+          <a href="https://twitter.com/Assofac"><img src="photo/twitter.png"></a>
+          <a href="https://www.linkedin.com/company/assofac"><img src="photo/linkedin.png"></a>
+          <p id="contact">Contact : 08 19 17 278 1 | &copy; 2021, La Boulangerie.</p>
+        </div>
+        </div>
+      </div> 
+ </footer>
+</body>
+</html>
